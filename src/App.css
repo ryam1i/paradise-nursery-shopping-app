@@ -1,0 +1,114 @@
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Landing Page Background Implementation */
+.landing-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)),
+    url('https://cdn.pixabay.com/photo/2020/02/08/10/35/forest-4829744_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+  max-width: 1300px;
+  width: 100%;
+  z-index: 2;
+}
+
+.landing_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 500px;
+  color: #ffffff;
+}
+
+.landing_content h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  margin-bottom: 8px;
+}
+
+.landing_content .tagline {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #c8e6c9;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.divider {
+  width: 80px;
+  height: 4px;
+  background-color: #4caf50;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.landing_content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e8f5e9;
+  margin-bottom: 30px;
+}
+
+.get-started-button {
+  background-color: #4caf50;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.get-started-button:hover {
+  background-color: #388e3c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.6);
+}
+
+.get-started-button:active {
+  transform: translateY(1px);
+}
+
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .landing_content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .landing_content h1 {
+    font-size: 2.4rem;
+  }
+}
